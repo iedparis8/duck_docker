@@ -1,0 +1,6 @@
+version: '2'
+services:
+  web:
+    restart: always
+    command: /usr/local/bin/gunicorn duck_site.duck_site.bo_wsgi:application -n duck_bo -w 3 -t 30 -b\
+         unix:/tmp/duck_bo.sock -p /tmp/duck_bo.pid

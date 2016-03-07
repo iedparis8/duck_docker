@@ -1,0 +1,11 @@
+version: '2'
+services:
+  web:
+    build: .
+    command: ['python', '-W ignore::DeprecationWarning', 'manage.py', 'runserver', '0.0.0.0:8000', '--settings=duck_site.duck_site.bo_settings']
+    volumes:
+      - ..:/code
+      - ../static:/static
+      - ../static_tel:/static_tel
+    ports:
+      - "8000:8000"
