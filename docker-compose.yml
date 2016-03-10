@@ -7,5 +7,6 @@ services:
       - ..:/code
       - ../static:/static
       - ../static_tel:/static_tel
+      - /tmp:/tmp
     ports:
       - "8000:8000"
