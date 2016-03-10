@@ -4,7 +4,7 @@ services:
     extends:
       file: docker-compose.yml
       service: web
-    command: ['python', '-W ignore::DeprecationWarning', 'manage.py', 'runserver', '0.0.0.0:800<&', '--settings=duck_site.duck_site.settings']
+    command: ['python', '-W ignore::DeprecationWarning', 'manage.py', 'runserver', '0.0.0.0:8001', '--settings=duck_site.duck_site.settings']
     depends_on:
       - db
     env_file: ./pass.env
