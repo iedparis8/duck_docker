@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 apps=(
     "duck_docker"
-    "duck_crispy_forms"
+    "crispy_forms"
     "helpdesk"
     "xadmin"
     "django_apogee"
