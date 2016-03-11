@@ -22,4 +22,5 @@ apps=(
 for app in $apps
 do
 cd ../$app && git pull && cd ../duck_docker
+echo "ok"
 done
