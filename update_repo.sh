@@ -9,6 +9,7 @@ apps=(
     "foad"
     "duck_inscription"
     "duck_inscription_payzen"
+    "duck_paiement_etudiant"
     "duck_personnel"
     "duck_recruitment"
     "duck_salle"
